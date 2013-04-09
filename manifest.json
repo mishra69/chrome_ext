@@ -1,0 +1,27 @@
+{
+"manifest_version":2,
+
+"name":"speak_in",
+"description":"This extension lets you speak in to text boxes",
+"version":"0.1",
+
+"content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+"background": { "scripts": ["background1.js"] },
+	
+"permissions": [
+	"tabs", 
+	"http://*/*"
+],
+
+"browser_action": {
+	"default_icon":"icon.png"
+	
+	
+	}
+	
+}
